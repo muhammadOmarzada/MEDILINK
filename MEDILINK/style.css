@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+h1 {
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+.card-menu {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-menu:hover {
+  background-color: #eee;
+}
+
+.card-menu span {
+  font-size: 14px;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: #636e72;
+}
+
+a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #764ba2;
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.alert-danger {
+  background-color: #fff3f3;
+  color: #dc3545;
+  border: 1px solid #ffcdd2;
+}
+
+/* Animasi untuk form */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  input,
+  button {
+    padding: 12px;
+  }
+}
